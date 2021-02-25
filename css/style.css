@@ -1,0 +1,174 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body__container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 34px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  background: #eee linear-gradient(to bottom,#fcfcfc, #eee);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+  
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.07);
+}
+
+.btn.btn--primary {
+  border: 1px solid #65b836;
+  background: #55a532 linear-gradient(to bottom, #91dd70, #55ae2e);
+  color: #fff;
+}
+
+/* INPUT */
+.input--text {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+  font-size: 16px;
+}
+
+.input--text:focus {
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),
+              0 0 5px rgba(81,167,232,0.5);
+}
+
+/* Vendor Prefix (브라우저 업체별 접두사) */
+.input--text::-webkit-input-placeholder {color: #cacaca; }
+.input--text::-ms-input-placeholder { color:#cacaca; }
+.input--text::-moz-input-placeholder { color:#cacaca; }
+
+/* Float Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid rgba(0,0,0, .75);
+  box-shadow: 0 0 5px rgb(0 0 0 / 75%);
+}
+.header .container {
+  max-width: 980px;
+  height: 78px;
+  margin: 0 auto;
+}
+
+.header .menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header .menu-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/logo.svg);
+  text-indent: -9999px;
+  margin-right: 10px;
+}
+
+.header .menu-logo:hover {
+  background-image: url(../img/logo_on.svg);
+}
+
+.header .main-menu {
+  display: flex;
+}
+
+.menu-group .main-menu a{
+  display: block;
+  padding: 10px;
+  color: #3c4146;
+}
+
+.menu-group .main-menu a:hover {
+  color:  #4078c0;
+}
+
+.sign-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+}
+
+.sign-group .btn-group {
+  display: flex;
+}
+
+.sign-group .btn-group a:first-child {
+  margin-right: 4px;
+}
+
+#search-form {
+  margin-right: 12px;
+}
+
+#search {
+  width: 160px;
+  font-size: 14px;
+}
+
+#search + [type="submit"] {
+  display: none;
+}
+
+.sign-group .sub-menu {
+  display: flex;
+  margin-right: 10px;
+}
+
+.sign-group .sub-menu a {
+  display: block;
+  padding: 8px;
+  font-size: 13px;
+  color: #3c4146;
+}
+
+
+
+  
