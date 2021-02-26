@@ -252,8 +252,173 @@ a {
   margin-top: 5px;
 }
 
+/* FEATURE */
+.feature {
+  background-color: #f5f5f5;
+  padding-top: 66px; 
+}
 
+.feature .feature-text {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.feature .video {
+  max-width: 650px;
+  margin: 50px auto;
+}
 
+.feature .video-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
 
-  
+.feature .video iframe {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.feature-subtext {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feature-subtext ul {
+  display: flex;
+}
+
+.feature-subtext li {
+  max-width: 25%;
+  padding: 34px 24px;
+  border-right: 1px solid #e5e5e5;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.feature-subtext li:last-child {
+  border-right: none;
+}
+
+.feature-subtext img {
+  width: 100%;
+  padding: 14px 10% 24px;
+}
+
+.feature-subtext h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.feature-subtext p {
+  font-size: 14px;
+  color: #767676;
+}
+
+/* LOCATION */
+.location .container {
+  max-width: 980px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.location-map {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  margin-top: 40px;
+}
+
+/* SIGN-CARD */
+.card {
+  background: linear-gradient(#f5f5f5, #fff);
+}
+
+.card .container {
+  max-width: 980px;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.card .card-text {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.card .cell {
+  height: 114px;
+  padding: 24px;
+}
+
+.card .cell-1 {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e5e5e5;
+}
+
+.card .cell-2 {
+  flex: 1;
+}
+
+.card .btn.btn--primary {
+  height: 50px;
+  font-size: 16px;
+}
+
+.card .card-desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+.footer .container {
+  max-width: 980px;
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer .site-links {
+  display: flex;
+}
+
+.footer .site-links li {
+  font-size: 12px;
+  color: #767676;
+  margin-right: 12px;
+}
+
+.footer .site-links a {
+  color: #4078c0;
+}
+
+.footer .site-links a:hover {
+  text-decoration: underline;
+}
+
+.footer .logo {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/logo_footer.svg);
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer .logo:hover {
+  background-image: url(../img/logo_on.svg);
+  background-size: contain;
+}
